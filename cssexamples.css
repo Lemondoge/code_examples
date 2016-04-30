@@ -1,0 +1,20 @@
+/** CONTENTS
+* Using 'content'
+** 'attr()'
+*** Link href revealer
+** Calculations
+**/
+/** Using 'content' **/
+/*** 'attr()' ***/
+/**** Link href revealer ****/
+a[href]::after {
+  content: " (" + attr(href) + ")";
+  font-size: 75%;
+}
+/*** Calculations ***/
+5X4::before {
+  content: calc(5 * 4);
+}
+9X9::before {
+  content: calc(9 * 9);
+}
